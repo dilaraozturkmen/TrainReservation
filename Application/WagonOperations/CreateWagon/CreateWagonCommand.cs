@@ -11,9 +11,9 @@ namespace TrainBooking.Application.WagonOperations.CreateWagon
     public class CreateWagonCommand
     {
         public readonly IMapper _mapper;
-        public readonly ITrainBookingDbContext _context;
+        public readonly TrainBookingDbContext _context;
 
-        public CreateWagonCommand(ITrainBookingDbContext context, IMapper mapper)
+        public CreateWagonCommand(TrainBookingDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

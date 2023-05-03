@@ -8,9 +8,9 @@ namespace TrainBooking.Application.BookingWagonOperationsü.CreateBookinWagon
 {
     public class CreateBookingWagonCommand
     {
-        public readonly ITrainBookingDbContext _context;
+        public readonly TrainBookingDbContext _context;
 
-        public CreateBookingWagonCommand(ITrainBookingDbContext context)
+        public CreateBookingWagonCommand(TrainBookingDbContext context)
         {
             _context = context;
         }

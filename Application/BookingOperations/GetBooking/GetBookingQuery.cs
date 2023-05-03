@@ -7,9 +7,9 @@ namespace TrainBooking.Application.BookingOperations.GetBooking
     public class GetBookingQuery
     {
 
-        private readonly ITrainBookingDbContext _context;
+        private readonly TrainBookingDbContext _context;
         private readonly IMapper _mapper;
-        public GetBookingQuery(ITrainBookingDbContext dbContext, IMapper mapper)
+        public GetBookingQuery(TrainBookingDbContext dbContext, IMapper mapper)
         {
             _context = dbContext;
             _mapper = mapper;

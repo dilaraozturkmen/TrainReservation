@@ -8,8 +8,8 @@ namespace TrainBooking.Application.TrainOperations.CreateTrain
     public class CreateTrainCommand
     {
         public readonly IMapper _mapper;
-        public readonly ITrainBookingDbContext _context;
-        public CreateTrainCommand( ITrainBookingDbContext context, IMapper mapper)
+        public readonly TrainBookingDbContext _context;
+        public CreateTrainCommand( TrainBookingDbContext context, IMapper mapper)
         {
             _mapper = mapper;
             _context = context;

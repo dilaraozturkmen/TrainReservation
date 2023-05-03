@@ -9,10 +9,10 @@ namespace TrainBooking.Application.BookingWagonOperationsü.GetBookinWagon
     public class GetBookingWagonQuery
     {
         public readonly IMapper _mapper;
-        public readonly ITrainBookingDbContext _context;
+        public readonly TrainBookingDbContext _context;
 
 
-        public GetBookingWagonQuery(ITrainBookingDbContext context, IMapper mapper )
+        public GetBookingWagonQuery(TrainBookingDbContext context, IMapper mapper )
         {
             _context = context;
             _mapper = mapper;

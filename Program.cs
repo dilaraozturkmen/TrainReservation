@@ -1,6 +1,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Reflection;
 using TrainBooking.DBOperations;
 
@@ -13,8 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<TrainBookingDbContext>(options => options.UseInMemoryDatabase(databaseName: "TrainBookingDB", b => b.EnableNullChecks(false)));
-builder.Services.AddScoped<ITrainBookingDbContext>(provider => provider.GetService<TrainBookingDbContext>());
+builder.Services.AddDbContext<TrainBookingDbContext>(options => options.UseInMemoryDatabase(databaseName: "TrainBookingDB"));
+
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

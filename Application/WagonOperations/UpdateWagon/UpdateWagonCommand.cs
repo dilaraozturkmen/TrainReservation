@@ -9,9 +9,9 @@ namespace TrainBooking.Application.WagonOperations.UpdateWagon
     public class UpdateWagonCommand
     {
         public readonly IMapper _mapper;
-        public readonly ITrainBookingDbContext _context;
+        public readonly TrainBookingDbContext _context;
 
-        public UpdateWagonCommand(ITrainBookingDbContext context)
+        public UpdateWagonCommand(TrainBookingDbContext context)
         {
             _context = context;
         }

@@ -13,10 +13,10 @@ namespace TrainBooking.Application.BookingOperations.CreateBooking
     public class CreateBookingCommand
     {
         public readonly IMapper _mapper;
-        public readonly ITrainBookingDbContext _context;
+        public readonly TrainBookingDbContext _context;
         public bool ReservationAvailable;
         public CreateBookingModel Model { get; set; }
-        public CreateBookingCommand(ITrainBookingDbContext context, IMapper mapper)
+        public CreateBookingCommand(TrainBookingDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

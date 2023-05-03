@@ -12,9 +12,9 @@ namespace TrainBooking.Controllers
     public class TrainController : ControllerBase
     {
         public readonly IMapper _mapper;
-        public readonly ITrainBookingDbContext _context;
+        public readonly TrainBookingDbContext _context;
 
-        public TrainController(ITrainBookingDbContext context, IMapper mapper)
+        public TrainController(TrainBookingDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
